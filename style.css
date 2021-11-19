@@ -11,7 +11,7 @@ body {
 }
 
 .main-gallery {
-        height: 650px;   
+        height: 82vh;   
 }
 
 .logo-top {
@@ -23,7 +23,7 @@ body {
 .carousel-item img {
     object-fit: cover;
         background-size: cover;
-        height: 77vh;
+        height: 82vh;
 }
 
 .carousel-caption { 
@@ -57,6 +57,10 @@ body {
     margin-bottom: 15px;
   }
   
+  .height-gal {
+    height: 75vh !important;
+  }
+
   .accordion-item > .title {
     color: black;
     display: -webkit-box;
@@ -100,6 +104,28 @@ body {
     padding: 0 30px;
   }
 
+  .icons {
+    display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    margin-top: 0px;
+  }
+  
+  .icons i {
+    margin: 15px 10px;
+    color: #0c838d;
+  }
+  
+  .icon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 25%;
+    margin: 13px 10px;
+  }
+
+
 
 .onas-img img {
     width: 100%;
@@ -116,9 +142,6 @@ body {
     .carousel-caption {
         top: 30%;
     }
-    .onas .margin-closer {
-        margin-top: -100px !important;
-    }
     .onas .col-lg-5 {
         text-align: center !important;
     }
@@ -133,6 +156,9 @@ body {
         width: 270px;
         height: 270px;
         border-radius: 50%;
+    }
+    .accordion-item > .title {
+        font-size: 18px;
     }
     
 }
