@@ -77,3 +77,4 @@ accordionItems.forEach(itemAccordion => {
 })
 
 
+AOS.init();

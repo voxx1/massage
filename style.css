@@ -33,6 +33,12 @@ body {
     margin: 0 5px;
     font-size: 18px;
 }
+.nav-link:hover {
+    color: #0c838d !important;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
 .carousel-caption h2 {
     font-size: 45px;
 
@@ -45,7 +51,11 @@ body {
     height: 380px;
     border-radius: 50%;
 }
-
+.btn-success {
+    color: #fff;
+    background-color: #0c838d !important;
+    border-color: #0c838d !important;
+}
 .accordion-item {
     opacity: 0;
     visibility: hidden;
@@ -81,7 +91,7 @@ body {
   }
   
   .accordion-item > .title > .arrow {
-    fill: #365838;
+    fill: #0c838d;
   }
   
   .accordion-item > .content {
@@ -104,6 +114,11 @@ body {
     padding: 0 30px;
   }
 
+  .logo-bot {
+        width: 200px;
+        height: auto;
+  }
+
   .icons {
     display: flex;
             flex-direction: row;
@@ -118,19 +133,109 @@ body {
   }
   
   .icon {
-    height: 40px;
+    height: 40px !important;
     width: 40px;
     display: block;
     border-radius: 25%;
     margin: 13px 10px;
   }
+.bg-shadow-left {
+    box-shadow: 25px 0px 0px -12px #0c838d !important;
+    padding-left: 10px;
+}
 
+.bg-shadow-full {
+    background: linear-gradient(to left, #fff 0%, #fff 80%, #0c838d 80%);
+}
 
 
 .onas-img img {
     width: 100%;
     height: auto;
 }
+
+.box {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    height: 2px;
+    margin: 0 auto 0 auto;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  
+  .box:hover {
+    -webkit-animation-name: bounce-5;
+            animation-name: bounce-5;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  
+  @-webkit-keyframes bounce-5 {
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      -webkit-transform: scale(1.1, 0.9) translateY(0);
+              transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-10px);
+              transform: scale(0.9, 1.1) translateY(-10px);
+    }
+    50% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(-4px);
+              transform: scale(1, 1) translateY(-4px);
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+  }
+  
+  @keyframes bounce-5 {
+    0% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      -webkit-transform: scale(1.1, 0.9) translateY(0);
+              transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-10px);
+              transform: scale(0.9, 1.1) translateY(-10px);
+    }
+    50% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    57% {
+      -webkit-transform: scale(1, 1) translateY(-4px);
+              transform: scale(1, 1) translateY(-4px);
+    }
+    64% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) translateY(0);
+              transform: scale(1, 1) translateY(0);
+    }
+  }
+
 
 @media (max-width:991px) {
     .reverse {
@@ -140,11 +245,15 @@ body {
         text-align: center;
     }
     .carousel-caption {
-        top: 30%;
+        top: 37%;
     }
     .onas .col-lg-5 {
         text-align: center !important;
     }
+    .logo-bot {
+        margin: 20px 0;
+        width: 150px;
+  }
 }
 @media (max-width: 500px) {
     .logo-top {
@@ -160,15 +269,25 @@ body {
     .accordion-item > .title {
         font-size: 18px;
     }
+}
+@media (max-width: 600px) {
+    .bg-shadow-left {
+        box-shadow: 25px 0px 0px -12px #ffffff !important;
+    }
     
 }
+
 @media (max-width: 360px) {
     .wrapper {
       margin: 0 auto;
       width: 360px;
     }
   }
-
+ @media (min-width: 991px) and (max-width: 1080px) {
+    .nav-item {
+        font-size: 15px;
+    }
+ }
   @media (min-width: 2000px) {
     .wrapper {
       margin: 0 auto;
