@@ -268,6 +268,7 @@ body {
     }
     .accordion-item > .title {
         font-size: 18px;
+        padding-left: 12px;
     }
 }
 @media (max-width: 600px) {
