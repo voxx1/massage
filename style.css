@@ -17,7 +17,6 @@ body {
 .logo-top {
     width:310px; 
     height:150px;
-    margin-left: 20px;
 }
 
 .carousel-item img {
@@ -50,6 +49,7 @@ body {
     width: 380px;
     height: 380px;
     border-radius: 50%;
+    box-shadow: -12px 12px 0px 0px #0c838d;
 }
 .btn-success {
     color: #fff;
@@ -92,6 +92,7 @@ body {
   
   .accordion-item > .title > .arrow {
     fill: #0c838d;
+    padding-left: 10px;
   }
   
   .accordion-item > .content {
@@ -126,7 +127,6 @@ body {
             align-items: center;
     margin-top: 0px;
   }
-  
   .icons i {
     margin: 15px 10px;
     color: #0c838d;
@@ -139,6 +139,7 @@ body {
     border-radius: 25%;
     margin: 13px 10px;
   }
+  
 .bg-shadow-left {
     box-shadow: 25px 0px 0px -12px #0c838d !important;
     padding-left: 10px;
@@ -267,9 +268,16 @@ body {
         border-radius: 50%;
     }
     .accordion-item > .title {
-        font-size: 18px;
-        padding-left: 12px;
+        font-size: 15px;
     }
+    .carousel-caption h2 {
+      font-size: 38px;
+  }
+  .carousel-caption p {
+    font-size: 17px;
+}
+
+
 }
 @media (max-width: 600px) {
     .bg-shadow-left {
@@ -289,6 +297,13 @@ body {
         font-size: 15px;
     }
  }
+ @media (min-width: 991px)  {
+   .navbar-nav {
+     margin-right: 20px;
+   }
+ }
+
+
   @media (min-width: 2000px) {
     .wrapper {
       margin: 0 auto;
