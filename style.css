@@ -27,7 +27,7 @@ body {
 
 .carousel-caption { 
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 30px;
     top: 40%;
 }
 .nav-item {
