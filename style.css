@@ -248,7 +248,7 @@ body {
         text-align: center;
     }
     .carousel-caption {
-        top: 37%;
+        top: 30%;
     }
     .onas .col-lg-5 {
         text-align: center !important;
@@ -273,7 +273,7 @@ body {
         font-size: 15px;
     }
     .carousel-caption h2 {
-      font-size: 32px;
+      font-size: 28px;
   }
   .carousel-caption p {
     font-size: 17px;
