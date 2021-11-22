@@ -78,6 +78,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
     -webkit-box-pack: justify;
