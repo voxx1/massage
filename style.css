@@ -289,10 +289,10 @@ body {
     
 }
 
-@media (max-width: 435px) {
+@media (max-width: 360px) {
     .wrapper {
       margin: 0 auto;
-      width: 435px;
+      width: 360px;
     }
   }
  @media (min-width: 991px) and (max-width: 1080px) {
