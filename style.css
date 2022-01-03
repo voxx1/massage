@@ -11,18 +11,74 @@ body {
 }
 
 .main-gallery {
-        height: 82vh;   
+        height: 100vh;   
 }
 
+.logo-upper {
+  height: 165px;
+  width: 100%;
+}
+.logo-upper-scroll {
+  height: 120px !important;
+}
+.filler {
+  height: 60px;
+  
+}
+.onas-img img {
+  width: 100%;
+  height: auto;
+}
+.blog-more {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+.blog-more:hover {
+  color: #0c838d;
+  cursor: pointer;
+}
+.author {
+  text-transform: uppercase;
+  line-height: 1rem;
+  font-weight: 500;
+  padding: 0 30px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.author a {
+  text-decoration: none;
+  color: black;
+}
+
+.author a:hover {
+  color: black;
+}
+
+.author p {
+  margin-top: 10px;
+}
+
+.author-color:hover {
+  color: #0c838d !important;
+}
+
+.bg-white {
+  background: white !important;
+}
 .logo-top {
-    width:310px; 
-    height:150px;
+  width:90%; 
+  max-height: 250px;
+  display: none;
 }
 
 .carousel-item img {
     object-fit: cover;
         background-size: cover;
-        height: 82vh;
+        height: 100vh;
 }
 
 .carousel-caption { 
@@ -49,7 +105,7 @@ body {
 }
 .zespół-img {
     width: 380px;
-    height: 380px;
+    height: 480px;
     border-radius: 50%;
     box-shadow: -12px 12px 0px 0px #0c838d;
 }
@@ -146,6 +202,10 @@ body {
 .bg-shadow-left {
     box-shadow: 25px 0px 0px -12px #0c838d !important;
     padding-left: 10px;
+}
+
+.img-bg {
+  box-shadow: -12px 12px 0px 0px #0c838d;
 }
 
 .bg-shadow-full {
@@ -258,18 +318,19 @@ body {
         margin: 20px 0;
         width: 150px;
   }
+
+  .navbar-collapse {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 500px) {
-    .logo-top {
-        width:200px; 
-        height:110px;
-        margin-left: 0;
-    }
+
     .zespół-img {
-        width: 270px;
-        height: 270px;
+        width: 100%;
+        height: auto;
         border-radius: 50%;
     }
+    
     .accordion-item > .title {
         font-size: 15px;
     }
@@ -279,13 +340,38 @@ body {
   .carousel-caption p {
     font-size: 17px;
 }
-
+.logo-upper {
+  height: 130px;
+  width: 90%;
+    }
+    .carousel-item img {
+    height: 70vh !important;
+}
+.main-gallery {
+    height: 70vh !important;
+    margin-top: 20px !important;
+}
+    .fixed-top {
+        margin-bottom: -20px;
+        background: white;
+    }
+    .logo-upper-scroll {
+      height: 70px !important;
+  }
+  .logo-upper {
+    height: 100px;
+}
 
 }
+
 @media (max-width: 600px) {
     .bg-shadow-left {
         box-shadow: 25px 0px 0px -12px #ffffff !important;
     }
+    .img-bg {
+      box-shadow: -12px 12px 0px 0px #ffffff;
+    }
+    
     
 }
 
@@ -300,9 +386,20 @@ body {
         font-size: 15px;
     }
  }
+
+ @media (min-width: 992px) {
+   .logo-top {
+     display: block;
+   }
+ }
+
+
  @media (min-width: 991px)  {
    .navbar-nav {
      margin-right: 20px;
+   }
+   .filler {
+     height: 100px;
    }
  }
 
@@ -311,5 +408,8 @@ body {
     .wrapper {
       margin: 0 auto;
       width: 2000px;
+    }
+    .fixed-top {
+      position: static !important;
     }
   }

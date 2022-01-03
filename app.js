@@ -1,3 +1,17 @@
+let nav = document.querySelector('nav');
+let logo = document.getElementById('navbar-logo');
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 100) {
+        nav.classList.add('bg-white');
+        logo.classList.add('logo-upper-scroll');
+    } else {
+        nav.classList.remove('bg-white');
+        logo.classList.remove('logo-upper-scroll');
+    }
+})
+
+
 // stagger items
 gsap.fromTo('.accordion-item', {autoAlpha: 0, scale: 0.9}, {duration: 1, autoAlpha: 1, scale: 1, ease: Power1.easeInOut, stagger: .05});
 
@@ -75,6 +89,13 @@ accordionItems.forEach(itemAccordion => {
         }
     })
 })
+
+
+function myFunction() {
+    let element = document.getElementById("navbarSupportedContent");
+    element.classList.remove("show");
+ }
+   
 
 
 AOS.init();

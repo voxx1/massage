@@ -10,18 +10,47 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo1.svg">
+    <meta name="description" content="Gabinet BodyMyHome to najlepsze miejsca do relaksu i regeneracji jakie możesz znaleźć w Krakowie. Szeroka gama usług i możliwości sprosta każdemu klientowi.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Body My Home - Twoje centrum masażu i fizjoterapii na mapie Krakowa!</title>
+    <title>Body My Home - Twoje centrum masażu na mapie Krakowa!</title>
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Physiotherapy",
+  "@id": "",
+  "name": "BodyMyHome",
+  "image": "",
+  "priceRange": "5$-40",
+  "telephone": "+48 506 305 907",
+  "url": "https://bodymyhome.pl/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Karmelicka 15",
+    "addressLocality": "Kraków",
+    "addressRegion": "małopolska",
+    "postalCode": " 31-133",
+    "addressCountry": "Poland"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    }
+  ],
+  "sameAs": ["https://www.facebook.com/BodyMyHome/", "https://www.instagram.com/bodymyhome/"]
+}
+</script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img data-aos="fade-right"
-                    data-aos-duration="2500" class="logo-top" src="images/logo2.svg" alt="logo-main">
-                    
+                <a  class="navbar-brand" href="#">
+                    <img data-aos="fade-right" id="navbar-logo"
+                    data-aos-duration="2500" class="logo-upper" src="images/logo2-removebg-preview-swieta.png" alt="logo-main">
                   </a>
               <button data-aos="fade-right  "
               data-aos-duration="2500" class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,22 +60,22 @@
                 <ul data-aos="fade-right"
                 data-aos-duration="2500" class="navbar-nav  mb-lg-0 ms-auto ">
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#about">O NAS</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#about">O NAS</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#zespol">ZESPÓŁ</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#zespol">ZESPÓŁ</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#oferta">OFERTA</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#oferta">OFERTA</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#upominek">UPOMINEK</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#upominek">UPOMINEK</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#galeria">GALERIA</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#galeria">GALERIA</a>
                   </li>
                   <li class="nav-item">
-                    <a  class="nav-link active" href="#kontakt">KONTAKT</a>
+                    <a  onclick="myFunction()" class="nav-link active" href="#kontakt">KONTAKT</a>
                   </li>
                 </ul>
               </div>
@@ -58,47 +87,27 @@
             <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
                 <div data-aos="fade-in"
                 data-aos-duration="2500" class="main-gallery carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="1000">
-                    <img src="images/masaz1.jpg" class="d-block w-100" alt="massage-photo">
-                    <div class="carousel-caption">
-                      <h2>Profesjonalny zespół</h2>
-                      <p>Nasi masażyści posiadają certyfikowane umiejętności</p>
-                    </div>
-                  </div>
-                  <div class="main-gallery carousel-item" data-bs-interval="1000">
-                    <img src="images/masaz11.jpg" class="d-block w-100" alt="massage-photo">
-                    <div class="carousel-caption">
-                      <h2>Indywidualne podejście</h2>
-                      <p>Do każdego klienta podchodzimy w inny sposób</p>
-                    </div>
-                  </div>
-                  <div class="main-gallery carousel-item" data-bs-interval="1000">
-                    <img src="images/masaz4.jpg" class="d-block w-100" alt="massage-photo">
-                    <div class="carousel-caption">
-                      <h2>Wyjątkowo spędzony czas</h2>
-                      <p>Gwarantujemy, że czas spędzony w naszym studiu będzie pełen relaksu!</p>
-                    </div>
+                  <div class="carousel-item active">
+                    <img src="images/masaz8.webp" class="d-block w-100" alt="massage-photo">
                   </div>
                 </div>
               </div>
             </section>
-            <section>
+            <p class="filler" style="color: white;" id="about">filler</p>
+            <section id="about">
                 <div class="container ">
-                    <div id="about" class="row onas reverse mt-5">
+                  <h2 class="my-5"data-aos="fade-right"
+                  data-aos-duration="2500" style="font-size: 38px; text-align: center;">Nasze <span style="color:#0c838d;">punkty</span></h2>
+                    <div class="row onas reverse mt-5">
                         <div class="col-lg-7 onas-img mb-3" data-aos="fade-right"
                         data-aos-duration="2500">
-                            <img src="images/massage1.jpg" alt="onas-image">
+                            <img class="img-bg" src="images/gabinet2.webp" alt="onas-image">
                         </div>
                         <div class="col-lg-5 px-4 my-auto bg-shadow-left" data-aos="fade-in"
                         data-aos-duration="2500">
-                            <h2 style="font-size: 38px;" >O <span style="color:#0c838d;">nas</span></h2>
-                            <p>Gabinet istnieje od 2009r. Nazwę dobraliśmy tak aby kojarzyła się z czymś co znamy i o co
-                              dbamy na codzień!
-                              To miejsce to mieszanka solidnej wiedzy, dużego doświadczenia oraz pasji i chęci pomocy.
-                              Trzymamy się zasady “traktuj innych tak jak chcesz być traktowany”.
-                              </p>
-                            <p class="mb-3">Nasz personel korzysta z wielu szkoleń i zdobywa cenne doświadczenie, po to aby każda
-                              osoba czuł się u nas bezpiecznie a wykonywana terapia była efektywna.</p>
+                            <h2 style="font-size: 30px;" >Gabinet masażu <span style="color:#0c838d;">Body My Home</span></h2>
+                            <p>Gabinet istnieje od 2009r na ul.Karmelickiej. Nazwę dobraliśmy tak aby kojarzyła się z czymś co znamy i o co dbamy na co dzień! To miejsce to mieszanka solidnej wiedzy, dużego doświadczenia oraz pasji i chęci pomocy. Trzymamy się zasady “traktuj innych tak jak chcesz być traktowany”.</p>
+                            <p class="mb-3">W ofercie gabinetu między innymi: masaż leczniczy, terapia przeciwbólowa, masaże relaksacyjne, masaże orientalne oraz pielęgnacyjne, takie jak masaż twarzy Kobido czy masaż z peelingiem "Beauty".</p>
                         </div>
                     </div>
                 </div>
@@ -106,93 +115,76 @@
                     <div class="row onas mt-4">
                         <div class="col-lg-5 px-4 text-end my-auto " data-aos="fade-right"
                         data-aos-duration="2500">
-                            <h2 style="font-size: 38px;">Nasze <span style="color:#0c838d;">punkty</span></h2>
-                            <p>Gabinet masażu <span style="color:#0c838d;">“Body My Home”</span> na ul.Karmelickiej, gdzie wykonywana jest terapia
-                              masażem: terapie przeciwbólowe, masaże relaksacyjne, masaże orientalne oraz
-                              pielęgnacyjne, jak masaż twarzy Kobido, masaż ujędrniający ciała, masaż z peelingiem.</p>
-                            <p class="mb-3">Drugi punkt to gabinet w centrum medycznym <span style="color:#0c838d;">Skymedic</span> ul. Dywizjonów 303 62C.
-                              W tym miejscu skupiamy się na rehabilitacji a przede wszystkim na diagnostyce stóp,
-                              projektowaniu i tworzeniu wkładek korekcyjnych i ortopedycznych. </p>
+                            <h2 style="font-size: 30px;">Gabinet <span style="color:#0c838d;">rehabilitacji</span></h2>
+                              <p>Gabinet znajduję się w centrum medycznym <span style="color:#0c838d;">Skymedic</span> ul. Dywizjonów 303 62C. W tym miejscu skupiamy się przede wszystkim na diagnostyce stóp oraz projektowaniu i tworzeniu wkładek korekcyjnych i ortopedycznych. Naszą specjalizacją jest ortopodologia oraz fizjoterapia uroginekologiczna.</p>
+                            <p class="mb-3">Skymedic jest miejscem, w którym pracuje wielu specjalistów zajmujących się naszym zdrowiem i ciałem. W centrum można skorzystać z diagnostyki: ortopedycznej, kardiologicznej, neurologicznej,podologicznej oraz fizjoterapii: ortopodologicznej, ortopedycznej, uroginekologicznej, neurologicznej  oraz dziecięcej. </p>
                         </div>
-                        <div class="col-lg-7 onas-img mb-3 mt-0" data-aos="fade-up"
+                        <div  class="col-lg-7 onas-img mb-3 mt-0" data-aos="fade-up"
                         data-aos-duration="2500">
-                            <img src="images/massage3.jpg" alt="onas-image">
+                            <img class="img-bg" src="images/reh1.webp" alt="onas-image">
                         </div>
                     </div>
                 </div>
             </section>
+            <p class="filler" style="color: white;" id="zespol">filler</p>
+
             <section>
-                <div id="zespol" class="container">
+                <div class="container">
                     <h2 data-aos="fade-right"
-                    data-aos-duration="2500" class=" text-center my-4" style="font-size: 33px;">Poznaj <span style="color:#0c838d;">nasz</span> zespół</h2>
+                    data-aos-duration="2500" class=" text-center my-5" style="font-size: 33px;">Poznaj <span style="color:#0c838d;">nasz</span> zespół</h2>
                     <div class="row reverse mx-3 mb-4 mt-4">
                         <div class="col-lg-6 text-center mt-4" data-aos="fade-right"
                         data-aos-duration="2500">
-                            <img src="images/masazysta1.jpeg" alt="zespoł-image" class="zespół-img">
+                            <img src="images/iwona-fota.webp" style=" border-radius: 0;" alt="zespoł-image" class="zespół-img">
                         </div>
-                        <div class="col-lg-6 text-center text-lg-start mt-5 bg-shadow-left" data-aos="fade-up"
+                        <div class="col-lg-6 text-center text-lg-start mt-2 bg-shadow-left" data-aos="fade-up"
                         data-aos-duration="2500">
                             <h3>Iwona Kosiba</h3>
                             <p>Magister Fizjoterapii, absolwentka Akademii Wychowania Fizycznego im. Bronisława
                               Czecha w Krakowie.
-                              W trakcie studiów ukończyłam 6-modułowe szkolenie z zakresu rehabilitacji
+                              W trakcie studiów ukończyła 6-modułowe szkolenie z zakresu rehabilitacji
                               uroginekologicznej posiadające akredytację Polskiego Towarzystwa Uroginekologicznego
-                              (PTUG).
-                              W swojej pracy wykorzystuję ogromną dawkę wiedzy teoretycznej i praktycznej z zakresu
-                              podologii ortopedycznej, gdzie przeprowadzam kompleksowe badania diagnostyczne stóp
-                              oraz projektuje i wykonuje indywidualne wkładki ortopedyczno-korekcyjne francuskiej firmy
-                              Capron.</p>
-                            <p>Ponadto posiadam szkolenia z zakresu igłoterapii, osteopatii w ginekologii,terapii
-                              wisceralnej, badania rehabilitacyjnego za pomocą USG, kinesiotapingu,masażu leczniczego
-                              Każdą wolną chwilę spędzam z rodziną, która daje mi sporo pozytywnej energii i motywuje
-                              mnie do dalszej pracy.</p>
-                            <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Umów się do mnie</a>
+                              (PTUG).</p>
+                              <p>Właścicielka "Body My Home" W gabinecie przez 14 lat zdobywała doświadczenie w pracy z bólem, przeciążeniami i napięciami pochodzenia mięśniowego. Obecnie oprócz zarządzania, zajmuje się również rehabilitacją uroginekologiczną kobiet oraz diagnostyką ortopodologiczną stóp. Posiada specjalistyczne szkolenie systemem Propedis z zakresu projektowania i wykonywania wkładek korekcyjnych,francuskiej firmy Capron.</p>
+                            <a href="http://skymedic.pl/ortopodologia/" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Zarezerwuj wizytę</a>
                         </div>
                     </div>
                     <div class="row mx-3 my-4">
                         <div class="col-lg-6 text-center text-lg-end mt-5" data-aos="fade-right"
                         data-aos-duration="2500">
                             <h3>Angelina</h3>
-                            <p>Jestem dyplomowana masażystką. Ukończyłam  Szkołę Policealną Integracyjną Masażu Leczniczego nr 2 w Krakowie. Posiadam niezbędne kwalifikacje, które są bardzo wysoko oceniane tzn. kurs anatomii palpacyjnej z rozluźnieniem struktur mięśniowo - powięziowych, czy też kurs terapeuty SPA. Pomogły mi one w dalszym stopniu rozwijać i doskonalić swoje umiejętności.</p>
-                            <p>W masażu najważniejsze jest dla mnie dać ulgę napiętym mięśniom, poprawić ruchomość stawów i pozwolić psychice na odprężenie. 
-                              Specjalizuje się w masażach leczniczych, klasycznych i relaksacyjnych. Każde z tych masaży ma własna wartość.
-                              Interesuje się anatomią człowieka, a w  wolnych chwilach spaceruje po górach.
-                              Jestem osobą życzliwą, empatyczną, preferują zgodę i harmonię, a przede wszystkim obdarowuje ludzi ciepłym i szczerym uśmiechem ,który pozytywnie wpływa na emocje.
+                            <p>W gabinecie jest z nami od 2021r. Ukończyła policealną szkołę  Masażu Leczniczego w Krakowie na kierunku technik masażysta. Posiada kwalifikacje z zakresu anatomii palpacyjnej z rozluźnieniem struktur mięśniowo - powięziowych, kurs terapeuty SPA. </p>
+                            <p>Specjalizuje się w masażach leczniczych, terapii przewlekłego bólu, przeciążeń związanych z zaburzeniami postawy ciała oraz nieprawidłową ergonomią pracy. Posiada szkolenia z zakresu masaży relaksacyjnych takich jak : masaż kamieniami bazaltowymi, masaż świecą, masaż bambusowy, techniki relaksacyjne w przewlekłym stresie.
                               </p>
-                            <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Umów się do mnie</a>
+                            <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Zarezerwuj wizytę</a>
                         </div>
                         <div class="col-lg-6 text-center mt-4" data-aos="fade-up"
                         data-aos-duration="2500">
-                            <img src="images/asia.jpeg" alt="zespoł-image" class="zespół-img">
+                            <img src="images/angelika-foto.webp" style="border-radius: 0;" alt="zespoł-image" class="zespół-img">
                         </div>
                     </div>
                     <div class="row mx-3 reverse my-4">
                         <div class="col-lg-6 text-center mt-4" data-aos="fade-right"
                         data-aos-duration="2500">
-                            <img src="images/ania.jpeg" alt="zespoł-image" class="zespół-img">
+                            <img src="images/ania-foto.webp" style=" border-radius: 0;" alt="zespoł-image" class="zespół-img">
                         </div>
                         <div class="col-lg-6 text-center text-lg-start mt-5 bg-shadow-left" data-aos="fade-in"
                         data-aos-duration="2500">
                             <h3>Ania</h3>
-                            <p>Zajmuję się masażem od 2014 roku, 
-                              ukończyłam dwuletnią szkołę policealną na kierunku technik masażysta
-                              Stale dokształcam się na kursach i szkoleniach, moje zainteresowania to mindfulness i siłowa aktywność fizyczna, w wolnych chwilach
-                              czytam książki i spaceruję.</p>
-                            <p>Mój warsztat i umiejętności to terapia
-                              próżniowa bańkami, masaż tkanek głębokich, punkty spustowe, praca z powięzią, masaż
-                              klasyczny, drenaż limfatyczny, masaż sportowy, izometryczny, terapia narzędziowa tkanek
-                              miękkich, masaże relaksacyjne orientalne : Lomi Lomi, Ajurwedyjski ciała i głowy, Balijski,
-                              Pałeczkami bambusowymi, stemplami ziołowymi, również gorącymi kamieniami i świecą.</p>
-                            <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Umów się do mnie</a>
+                            <p>Pracuje w gabinecie od 2014 roku. Z wyróżnieniem ukończyła dwuletnią szkołę policealną na kierunku technik masażysta. Swoje kwalifikacje sukcesywnie podnosi  na szkoleniach i warsztatach z zakresu metod i technik pracy z ciałem.</p>
+                            <p >W pracy wykorzystuję techniki powięziowe, masaż tkanek głębokich, punkty spustowe, masaż klasyczny, drenaż limfatyczny, masaż sportowy, izometryczny, terapię narzędziową tkanek miękkich, masaże relaksacyjne i orientalne : Lomi Lomi, Ajurwedyjski, Balijski, pałeczkami bambusowymi, gorącymi kamieniami oraz świecą.</p>
+                            <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Zarezerwuj wizytę</a>
                         </div>
                     </div>
                 </div>
             </section>
+            <p class="filler" style="color: white;" id="oferta">filler</p>
+
             <section>
-                <div id="oferta" data-aos="fade-right"
+                <div data-aos="fade-right"
                 data-aos-duration="2500" id="usługi" class="usługi mt-5">
                 <h1 data-aos="fade-right"
-                data-aos-duration="2500" class="section-title text-center">Usługi</h1>
+                data-aos-duration="2500" class="section-title text-center">Nasze usługi</h1>
 
                   <h2 data-aos="fade-right"
                   data-aos-duration="2500" class="section-title text-center mt-5 mb-3" style="text-decoration: underline #0c838d;">Masaż</h2>
@@ -209,13 +201,10 @@
                               <tbody>
                                 <tr>
                                   <td scope="row">Masaż leczniczy</td>
-                                  <td style="text-align: right;">40min-100zł, 60 min-130zł</td>
                                 </tr>
                                 <tr>                                  <td scope="row">Masaż relaksacyjny Classic</td>
-                                  <td style="text-align: right;">60min-150zł, 70min-180zł, 90min-210zł</td>
                                 </tr>
                                 <tr>                                  <td scope="row">Terapia przeciwbólowa mięśni grzbietu</td>
-                                  <td style="text-align: right;">40min-120zł</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -235,37 +224,34 @@
                               <tbody>
                                 <tr>
                                   <td scope="row">Masaż relaksacyjny Ciepłą oliwą</td>
-                                  <td style="text-align: right;">60min-160zł, 90min-200zł</td>
                                 </tr>
                                 <tr>                                  <td scope="row">Masaż relaksacyjny „Czekoladowy Relaks”</td>
-                                  <td style="text-align: right;">60min-160zł</td>
                                 </tr>
                                 <tr>                                  <td scope="row">"Dla niej" lub "Dla niego"</td>
-                                  <td style="text-align: right;">60 min-150zł</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Anty stres</td>
-                                  <td style="text-align: right;">60min-150zł</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Anty-stres II</td>
-                                  <td style="text-align: right;">80min-200zł</td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Masaż Energetyzujący</td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Masaż Balijski</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Pałeczkami bambusowymi</td>
-                                  <td style="text-align: right;">70min-180zł, 90min-220zł</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Moc zapachów</td>
-                                  <td style="text-align: right;">70min-180zł, 90 min-220zł</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Ciepłymi kamieniami bazaltowymi</td>
-                                  <td style="text-align: right;">90min-220zł</td>
                                 </tr>
                                 <tr>
                                   <td scope="row">Masaż Lomi Lomi</td>
-                                  <td style="text-align: right;">90min-200zł</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -284,7 +270,6 @@
                               <tbody>
                                 <tr>
                                   <td scope="row">Masaż Beauty</td>
-                                  <td style="text-align: right;">90 min-260zł</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -304,25 +289,36 @@
                             <tbody>
                               <tr>
                                 <td scope="row">"Zapach Orientu"</td>
-                                <td style="text-align: right;">60 min-140zł</td>
+                                <td style="text-align: right;">150zł</td>
                               </tr>
-                              <tr>                                  <td scope="row">"Pomarańczowy Relaks"-</td>
-                                <td style="text-align: right;">60 min-140zł</td>
+                              <tr>                                  
+                                <td scope="row">"Pomarańczowy Relaks"</td>
+                                <td style="text-align: right;">150zł</td>
                               </tr>
-                              <tr>                                  <td scope="row">"Lawendowe wspomnienie"-</td>
-                                <td style="text-align: right;">60 min-140zł</td>
+                              <tr>                                  
+                                <td scope="row">"Lawendowe wspomnienie"</td>
+                                <td style="text-align: right;">150zł</td>
                               </tr>
                               <tr>
                                 <td scope="row">"Arbuzowy Relaks"</td>
-                                <td style="text-align: right;">60 min-140zł</td>
+                                <td style="text-align: right;">150zł</td>
                               </tr>
                               <tr>
                                 <td scope="row">"Kawowa Rozkosz"</td>
-                                <td style="text-align: right;">60min-140zł</td>
+                                <td style="text-align: right;">150zł</td>
                               </tr>
                               <tr>
                                 <td scope="row">"Masaż do wyboru"</td>
-                                <td style="text-align: right;">z całej oferty gabinetu</td>
+                                <td style="text-align: right;">150zł</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">"Zaproszenie na diagnostyke komputerową stóp"</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">"Diagnostyka + wkładki korekcyjne"</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">Dokładny opis masaży znajdą Państwo w serwisie booksy.pl.</td>
                               </tr>
                             </tbody>
                           </table>
@@ -330,6 +326,7 @@
                     </div>
                 </div>
               <div class="text-center">
+                <p>Dokładny opis wszystkich masaży znajdą Państwo w linku poniżej</p>
               <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" data-aos="fade-right"
               data-aos-duration="2500" class="btn  btn-success btn-lg   box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Umów się na masaż</a>
               </div>
@@ -564,7 +561,9 @@
           </div>
               </div>
               <div class="text-center">
-                <a href="http://skymedic.pl/mgr-iwona-kosiba/" target="_blank" data-aos="fade-right"
+                <p data-aos="fade-right"
+                data-aos-duration="2500">Dokładny opis wszystkich usług znajdą Państwo w linku poniżej</p>
+                <a href="http://skymedic.pl/ortopodologia/" target="_blank" data-aos="fade-right"
                 data-aos-duration="2500" class="btn  btn-success btn-lg   box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Wybierz fizjoterapie</a>
                 </div>
               </section>
@@ -574,17 +573,17 @@
                 <div class="row">
                   <div id="carouselExampleControls" class="carousel slide col-lg-7 p-0 carousel-fade mb-5"  data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="2000">
-                          <img src="images/wkładki1.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                      <div class="carousel-item active" data-bs-interval="2500">
+                          <img src="images/wkładki1.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                       </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                          <img src="images/wkładki2.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                      <div class="carousel-item" data-bs-interval="2500">
+                          <img src="images/wkładki2.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                       </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                          <img src="images/wkładki6.jpg"  class="d-block w-100 height-gal " alt="carousel-img">
+                      <div class="carousel-item" data-bs-interval="2500">
+                          <img src="images/wkładki6.webp"  class="d-block w-100 height-gal " alt="carousel-img">
                       </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/wkładki7.jpg"  class="d-block w-100 height-gal " alt="carousel-img">
+                      <div class="carousel-item" data-bs-interval="2500">
+                        <img src="images/wkładki7.webp"  class="d-block w-100 height-gal " alt="carousel-img">
                     </div>
                   </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -607,99 +606,205 @@
                     Dodatkowo wykonamy manualne badanie twoich stóp oraz całej sylwetki (polecamy wziąć
                     ze sobą spodenki i koszulkę).
                     </p>
-                  <a href="http://skymedic.pl/mgr-iwona-kosiba/" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Zamów już dziś</a>
+                  <a href="http://skymedic.pl/ortopodologia/" target="_blank" class="btn  btn-success btn-lg  box bounce-5" style="height: 46px; margin-top: 5px;" role="button">Zamów już dziś</a>
                 </div>
                 </div>
                 </div>
               </section>
+              <p class="filler" style="color: white;" id="upominek">filler</p>
+
               <section>
-                <div id="upominek" class="container">
+                <div class="container">
                   <h2 class="text-center my-5" data-aos="fade-right"
                   data-aos-duration="2500" style="font-size: 38px;">Upominek dla <span style="color:#0c838d;">Ciebie</span></h2>
                   <div class="row onas mt-4">
                       <div class="col-lg-5 px-4 text-center my-auto ">
                           <h5 data-aos="fade-right"
-                          data-aos-duration="2500">Wspaniały prezent dla najbliższych lub kogoś wyjątkowego!</h5>
+                          data-aos-duration="2500">Wspaniały prezent dla <span style="color:#0c838d;">najbliższych</span> lub kogoś <span style="color:#0c838d;">wyjątkowego</span>!</h5>
                           <p data-aos="fade-right"
-                          data-aos-duration="2500">1) <span style="color:#0c838d;">„Zapach Orientu”</span> – Masaż całego ciała ciepłym olejem orientalnym. Siła i i ntensywnośc masażu dobierana jest indywidualnie dla każdej osoby. Masaż może być wykonywany również za pomocą pałeczek i miotełek bambusowych.</p>
-                          <p data-aos="fade-right"
-                          data-aos-duration="2500" class="mb-3">2) <span style="color:#0c838d;">„Arbuzowy Relaks”</span>- Masaż relaksacyjny całego ciała soczyście pachnącym masłem arbuzowym. Podczas masażu terapeuta wykonuje masaż stóp eliminujący zmęczenie oraz codzienne przeciążenia organizmu.</p>
-                          <p data-aos="fade-right"
-                          data-aos-duration="2500" class="mb-4">3) <span style="color:#0c838d;">„Kawowa rozkosz”</span> – Masaż ciała energetyzująco pachnącym masłem kawowym . Siła i intensywnośc masażu dobierana jest indywidualnie dla każdej osoby. Podczas masażu terapeuta na życzenie może wykonać masaż stóp lub dłoni- masaż eliminujący napięcia oraz codzienne przeciążenia spowodowane pracą i stresem.</p>
-                         </div>
+                          data-aos-duration="2500">
+                            Jeżeli nie zainteresuje Państwa żaden masaż z propozycji poniżej, pomożemy wybrać lub skomponować masaż lub zabieg z <span style="color:#0c838d;">Naszej oferty</span>.
+                            Nie musisz wybierać masaży, możesz kupić upominek na dowolną kwotę a masaż wybierze osoba obdarowana. Upominki można odebrać osobiście w gabinecie po wcześniejszym umówieniu telefonicznym lub e-mailowym.
+                          </p>
+                        </div>
                       <div class="col-lg-7 text-center onas-img my-auto">
                           <img data-aos="fade-up"
-                          data-aos-duration="2500" style="width: 70%;" src="images/zaproszenie2-removebg-preview.png" alt="zaproszenie-img" class="mx-auto">
+                          data-aos-duration="2500" style="width: 70%;" src="images/zaproszenie-nowe1.jpg" alt="zaproszenie-img" class="mx-auto">
                       </div>
                   </div>
               </div>
-              <div class="container ">
+              <div class="container">
                 <div class="row onas mt-4 reverse">
-                  <div class="col-lg-7 text-center onas-img mb-3 mt-0">
-                        <img data-aos="fade-right"
-                        data-aos-duration="2500" style="width: 70%;" src="images/zaproszenie.jpg" alt="zaproszenie-img" class="mx-auto mb-5">
-                        <p data-aos="fade-right"
-                        data-aos-duration="2500">Upominki można odebrać osobiście w gabinecie po wcześniejszym umówieniu telefonicznym lub e-mailowym.
-                          Jeżeli nie zainteresuje Państwa żaden masaż z propozycji poniżej, pomożemy wybrać lub skomponować masaż lub zabieg z <span style="color:#0c838d;">Naszej oferty</span>.
-                          Nie musisz wybierać masaży, możesz kupić upominek na dowolną kwotę a masaż wybierze osoba obdarowana.
-
-
-                        </p>
-                    </div>
+                  <div class="col-lg-6 text-center onas-img my-auto">
+                    <img data-aos="fade-up"
+                    data-aos-duration="2500" src="images/zaproszenie-nowe2.jpg" alt="zaproszenie-img" class="mx-auto">
+                </div>
                     <div data-aos="fade-up"
-                        data-aos-duration="2500" class="col-lg-5 px-4 text-center my-auto bg-shadow-left">
-                        <p >4) <span style="color:#0c838d;">„Lawendowe wspomnienie”</span> Masaż relaksacyjny ciepłym olejkiem lawendowym. W masażu oprócz technik głęboko relaksacyjnych, stosowane są techniki delikatnie rozciągające mięsnie i relaksujące stawy.</p>
-                        <p >5) <span style="color:#0c838d;">„Pomarańczowy relaks”</span> Masaż relaksacyjny całego ciała soczyście pachnącym olejkiem pomarańczowym. Olejek przyjemnie otula ciało słodkim zapachem pomarańczy, niesamowicie relaksuje i ożeźwia nasze ciało. Masażem objęta jest również twarz i głowa.</p>
-                      </div>
+                        data-aos-duration="2500" class="col-lg-6 px-4 text-center my-auto bg-shadow-left">
+                        <h3>Jak zamówić <span style="color:#0c838d;">upominek</span>?</h3>
+                        <ul style="list-style: none;">
+                          <li>
+                            <p>1. Wybierz masaż.</p>
+                          </li>
+                          <li>
+                            <p class="mb-3">
+                              2. Zapłać<br>
+                              Opłata za masaże upominkowe możliwa jest przez BLIKa na nr. telefonu 506 305 907 lub przelew na nr. konta: <br>
+                              Body My Home Iwona Kosiba<br>
+                              
+                              ul. Karmelicka 15<br>
+                              
+                              31-133 Kraków<br>
+                              
+                              Ing Bank Śląski<br>
+                              
+                              82 1050 1445 1000 0090 6760 4935<br> 
+                              (w tytule proszę napisać jaki masaż i dla kogo)<br>
+                              
+                              </p>
+                              <p>Wysyłając płatność blikiem lub przelewem prosze o smsa lub e-maila z informacją na kogo wystawić upominek i na jaki email wysłać zaproszenie.</p>
+                          </li>
+                          <li>
+                            3. Wyślij nam potwierdzenie przelewu na e-maila:<br>
+                            <a href="mailto:kontakt@bodymyhome.pl">kontakt@bodymyhome.pl</a>
+                          </li>
+                          <li>
+                            <p>4. Jak tylko dostaniemy potwierdzenie przelewu lub pieniądze zostaną zaksięgowane na naszym koncie, wyślemy zaproszenie na twojego 
+                              e-maila.</p>
+                          </li>
+                          <li>
+                            <p>Po odbiór zaproszenia w wersji papierowej zapraszamy do gabinetu po wcześniejszym kontakcie telefonicznym lub e-mail.
+                              Możliwa płatność: blikiem, zbliżeniowo, kartą, gotówką.</p>
+                          </li>
+                        </ul>
+                        <p data-aos="fade-up"
+                        data-aos-duration="2500">Zapoznaj się z ofertą masaży poniżej:</p>
+                        <a data-aos="fade-up"
+                        data-aos-duration="2500" href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg my-4 box bounce-5" style="height: 46px;" role="button">Zamów teraz</a>
+                        </div>
                 </div>
             </div>
+            
               </section>
               <section>
-                <div id="galeria" class="container-fluid mt-4">
+                <div class="container">
+                <h2 data-aos="fade-in" data-aos-duration="3000" class="my-4"
+                  style="font-size: 30px; text-align: center;"><span style="color: #0c838d;">Aktualności</span> i <span style="color: #0c838d;">artykuły</span></h2>
+                <div class="d-flex">
+                  <div class="row">
+                    <div data-aos="fade-in" data-aos-duration="3000" class="col-lg-4">
+                      <div class="mb-4 onas-img">
+                        <img data-aos="fade-in" data-aos-duration="3000" src="images/masaz5.webp" alt="onas-image">
+                      </div>
+                      <div style=" padding-left: 15px;">
+                        <i class="fas fa-calendar-alt"> 15.06.2021</i>
+                        <h3 class="my-4">Tytuł sekcji Lorem ipsum dolor sit amet dalszy tytuł lorem ipsum dolor </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam quas aliquid, cum labore
+                          enim esse neque ea cumque reprehenderit maxime quisquam doloremque eius alias sunt rerum! Sapiente,
+                          maiores esse!</p>
+                        <p><a class="blog-more" href="blog1.html">Czytaj więcej</a></p>
+                      </div>
+                    </div>
+                    <div data-aos="fade-in" data-aos-duration="3000" class="col-lg-4">
+                      <div class="mb-4 onas-img">
+                        <img data-aos="fade-in" data-aos-duration="3000" src="images/masaz7.jpg" alt="onas-image">
+                      </div>
+                      <div>
+                        <i class="fas fa-calendar-alt"> 15.06.2021</i>
+                        <h3 class="my-4">Tytuł sekcji Lorem ipsum dolor sit amet dalszy tytuł lorem ipsum dolor </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam quas aliquid, cum labore
+                          enim esse neque ea cumque reprehenderit maxime quisquam doloremque eius alias sunt rerum! Sapiente,
+                          maiores esse!</p>
+                        <p><a class="blog-more" href="blog1.html">Czytaj więcej</a></p>
+                      </div>
+                    </div>
+                    <div data-aos="fade-in" data-aos-duration="3000" class="col-lg-4">
+                      <div class="mb-4 onas-img">
+                        <img data-aos="fade-in" data-aos-duration="3000" src="images/masaz6.webp" alt="onas-image">
+                      </div>
+                      <div  >
+                        <i class="fas fa-calendar-alt"> 15.06.2021</i>
+                        <h3 class="my-4">Tytuł sekcji Lorem ipsum dolor sit amet dalszy tytuł lorem ipsum dolor </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam quas aliquid, cum labore
+                          enim esse neque ea cumque reprehenderit maxime quisquam doloremque eius alias sunt rerum! Sapiente,
+                          maiores esse!</p>
+                        <p><a class="blog-more" href="blog1.html">Czytaj więcej</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </section>
+              <p class="filler" style="color: white;" id="galeria">filler</p>
+
+              <section >
+                <div class="container-fluid mt-4">
                   <h2 data-aos="fade-right"
                   data-aos-duration="2500" class="text-center my-5">Zobacz jak pracujemy</h2>
                 <div class="row">
                   <div id="carouselExampleControls" class="carousel slide col-lg-9 p-0 carousel-fade mb-5"  data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="1000">
-                            <img src="images/masaz4.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                        <div class="carousel-item active" data-bs-interval="2500">
+                            <img src="images/masaz4.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                         </div>
-                        <div class="carousel-item" data-bs-interval="1000">
-                            <img src="images/masaz5.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="images/masaz5.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                         </div>
-                        <div class="carousel-item" data-bs-interval="1000">
-                            <img src="images/masaz6.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="1000">
-                          <img src="images/masaz2.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                        <div class="carousel-item" data-bs-interval="2500">
+                      <img src="images/gabinet1.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                       </div>
-                      <div class="carousel-item" data-bs-interval="1000">
-                        <img src="images/masaz3.jpg"  class="d-block w-100 height-gal" alt="carousel-img">
+                        <div class="carousel-item" data-bs-interval="2500">
+                            <img src="images/masaz6.webp"  class="d-block w-100 height-gal" alt="carousel-img">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                          <img src="images/gabinet3.webp"  class="d-block w-100 height-gal" alt="carousel-img">
+                      </div>
+                        <div class="carousel-item" data-bs-interval="2500">
+                          <img src="images/masaz2.webp"  class="d-block w-100 height-gal" alt="carousel-img">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2500">
+                        <img src="images/masaz3.webp"  class="d-block w-100 height-gal" alt="carousel-img">
                     </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                      <img src="images/masaz13.webp"  class="d-block w-100 height-gal" alt="carousel-img">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2500">
+                    <img src="images/reh3.webp"  class="d-block w-100 height-gal" alt="carousel-img">
+                </div>
                     </div>
                 </div>
                 <div class="col-lg-3 my-auto text-center">
-                  <img class="logo-top" src="images/logo2.svg" alt="logo-main">
+                  <img class="logo-top" src="images/logo2-removebg-preview-swieta.png" alt="logo-main">
                 </div>
                 </div>
                 </div>
               </section>
+              <p class="filler" style="color: white;" id="kontakt">filler</p>
+
         </main>
         <footer>
-          <div id="kontakt" class="container">
+          <div  class="container">
             <h2 style="font-size: 38px; text-decoration: underline #0c838d;"  data-aos="fade-right"
             data-aos-duration="2500" class="mt-5 text-center" >Kontakt</h2>
             <div class="row mt-2">
-              <div class="col-lg-3 my-auto text-center">
-                <img data-aos="fade-right"
-                data-aos-duration="2500" class="logo-bot ms-0 mb-4" src="images/logo1.jpeg" alt="logo-main">
+              <div data-aos="fade-right"
+                data-aos-duration="2500" class="col-lg-3 my-auto text-center">
+                <img class="my-3 mx-auto d-none d-lg-block" src="images/nr_1-removebg-preview.webp" style="height: 170px; width: 170px;" alt="partner-img">
+                <img class="mx-auto d-none d-lg-block" src="images/logo-skymedic-all.svg" style="height: 170px; width: 170px;" alt="partner-img">
+                <div  class="author d-none d-lg-block">
+                  <a href="#">Ochrona danych i polityka cookies</a>
+                  <p>Copyright © 2021. All rights reserved.</p>
+                  <p>Made by <a class="author-color" href="https://voxx1.github.io/portfolio-site/" target="_blank">Norbert Zastępa</a></p>
+              </div>
               </div>
               <div data-aos="fade-in"
               data-aos-duration="2500" class="col-lg-6 my-auto text-center">
         
-                <h5>Salon masażu <span style="color:#0c838d;">Body My Home</span> - Twoja strefa relaksu</h5>
+                <h5>Gabinet masażu <span style="color:#0c838d;">Body My Home</span></h5>
+                <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" target="_blank" class="btn  btn-success btn-lg my-4 box bounce-5" style="height: 46px;" role="button">Zarezerwuj wizytę</a>
+
                         
-            <p><strong>Adres salonu:</strong></p>
+            <p><strong>Adres gabinetu:</strong></p>
             
             <p>ul. Karmelicka 15, 31-133 Kraków</p>
             
@@ -709,31 +814,68 @@
             
             <p><strong>Godziny otwarcia:</strong></p>
             
-            <p>Pn-Pt: 11:00&nbsp; - 21:00</p>
+            <p>Pn-Pt: 10:00&nbsp; - 21:00</p>
+
+            <a href="mailto:kontakt@bodymyhome.pl">kontakt@bodymyhome.pl</a>
+
+
+            <h5 class="mt-3">Centrum medyczne <span style="color:#0c838d;">Skymedic</span> fizjoterapia</h5>
+            <a href="http://skymedic.pl/ortopodologia/" target="_blank" class="btn my-4 btn-success btn-lg  box bounce-5" style="height: 46px;" role="button">Zarezerwuj wizytę</a>
+
+                        
+            <p><strong>Adres gabinetu:</strong></p>
+            
+            <p>ul. Dywizjonów 303 62C,
+
+              31-875 Kraków</p>
+            <p>parking bezpłatny przy budynku
+
+            </p>
+            
+            <p><strong>Telefon kontaktowy:</strong></p>
+            
+            <p>+48 506 305 907</p>
+            
+            <p><strong>Godziny otwarcia:</strong></p>
+            
+            <p>Pn-Pt: 10:00&nbsp; - 21:00</p>
+
+            <a href="mailto:kontakt@bodymyhome.pl">kontakt@bodymyhome.pl</a>
             
             <div class="icons mb-5">
-              <a href="https://www.instagram.com/hairandbeautycornerkrakow/?hl=pl" rel="noopener" target="_blank" class="icon-block">
+              <a href="https://www.instagram.com/bodymyhome/" rel="noopener" target="_blank" class="icon-block">
                 <i class="fab fa-instagram fa-2x box bounce-5"></i>
               </a>
-              <a href="https://www.facebook.com/HairAndBeautyCornerKrakow/" rel="noopener" target="_blank"  class="icon-block">
+              <a href="https://www.facebook.com/BodyMyHome/" rel="noopener" target="_blank"  class="icon-block">
                 <i class="fab fa-facebook fa-2x box bounce-5"></i>
               </a>
-              <a href="https://booksy.com/pl-pl/3086_hair-beauty-corner_salon-kosmetyczny_8820_krakow" rel="noopener" target="_blank"  class="icon-block">
+              <a href="https://booksy.com/pl-pl/97740_body-my-home-masaz-i-rehabilitacja_masaz_8820_krakow" rel="noopener" target="_blank"  class="icon-block">
                 <img src="images/booksy.png" class="icon box bounce-5" style="margin-top: 15px;" alt="booksy-icon">
               </a>
             </div>
             </div>
-              <div data-aos="fade-in
+              <div data-aos="fade-in"
               data-aos-duration="2500" class="col-lg-3">
                 <div class="text-center">
-                  <p>Gabinet masażu</p>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5121.860087914587!2d19.919849228463054!3d50.068871754186716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0932ea20d9%3A0xdd6f7f611c900c9b!2sBody%20My%20Home-Gabinet%20Masa%C5%BCu!5e0!3m2!1spl!2spl!4v1637521264623!5m2!1spl!2spl" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <p data-aos="fade-right"
+                  data-aos-duration="2500">Gabinet masażu</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5121.860087914587!2d19.919849228463054!3d50.068871754186716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0932ea20d9%3A0xdd6f7f611c900c9b!2sBody%20My%20Home-Gabinet%20Masa%C5%BCu!5e0!3m2!1spl!2spl!4v1637521264623!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="my-5 text-center">
-                  <p>Centrum medyczne</p>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10241.878594886772!2d20.005756724351432!3d50.07749322793206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716451308fc9bf9%3A0x320ae152346f3a15!2sCentrum%20Medyczne%20Skymedic!5e0!3m2!1spl!2spl!4v1637521363883!5m2!1spl!2spl" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <p data-aos="fade-right"
+                  data-aos-duration="2500">Gabinet Skymedic</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24358.765578463528!2d19.962518528209873!3d50.07880054062715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716455f5e6de9b7%3A0x1c21b6fa5105c83b!2sSkymedic%20Fizjoterapia!5e0!3m2!1spl!2spl!4v1637934221377!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <div  class="author d-lg-none">
+                    <img class="mb-3 d-block mx-auto" src="images/nr_1-removebg-preview.webp" style="height: 170px; width: 170px;" alt="partner-img">
+                    <img class="mb-3 d-block mx-auto" src="images/logo-skymedic-all.svg" style="height: 170px; width: 170px;" alt="partner-img">
+                    <p><a href="#">Ochrona danych i polityka cookies</a></p>
+                    <p>Copyright © 2021. All rights reserved.</p>
+                    <p>Made by <a class="author-color" href="https://voxx1.github.io/portfolio-site/" target="_blank">Norbert Zastępa</a></p>
                 </div>
+                </div>
+                
               </div>
+              
             </div>
           </div>
         </footer>
@@ -744,7 +886,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/aa377fcf50.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"      crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
+
